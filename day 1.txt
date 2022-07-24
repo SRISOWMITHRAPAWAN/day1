@@ -1,0 +1,59 @@
+1.distinguish between http1 and http2
+HTTP stands for hypertext transfer protocol 
+it is used in client-server communication. 
+By using HTTP user sends the request to the server & the server sends the response.
+
+HTTP2 is much faster and more reliable than HTTP1.1
+HTTP1.1 loads a single request for every TCP(Transmission control protocol) connection, 
+while HTTP2 avoids network delay by using multiplexing.
+
+HTTP/2 is much faster and more efficient than HTTP/1.1.
+HTTP/2 can send multiple requests for data in parallel over a single TCP connection. 
+This is the most advanced feature of the HTTP/2 protocol because it allows you to download web files asynchronously from one server.
+HTTP/1.1 loads resources one after the other, so if one resource cannot be loaded, it blocks all the other resources behind it. 
+HTTP/2 is able to use a single TCP connection to send multiple streams of data at once so that no one resource blocks any other resource. 
+HTTP/2 does this by splitting data into binary-code messages and numbering these messages so 
+that the client knows which stream each binary message belongs to.
+
+A server only serves content to a client device if the client asks for it. 
+this approach is not always practical for modern webpages, which often involve several dozen separate resources that the client must request. 
+HTTP/2 solves this problem by allowing a server to "push" content to a client before the client asks for it. 
+The server also sends a message letting the client know what pushed content to expect .
+
+small files load more quickly than large ones. 
+To speed up web performance
+both HTTP/1.1 and HTTP/2 compress HTTP messages to make them smaller.
+HTTP/2 uses a more advanced compression method called HPACK that eliminates redundant information in HTTP header packets. 
+This eliminates a few bytes from every HTTP packet. 
+Given the volume of HTTP packets involved in loading even a single webpage, those bytes add up quickly, resulting in faster loading.
+
+
+
+
+2.Objects And Its Internal Representation In JavaScript
+Objects in JavaScript is most important datatype and forms the building blocks for modern JavaScript. 
+These objects are different from JavaScript primitive data-types(Number, String, Boolean, null, undefined and symbol). 
+in the sense that while these primitive datatypes all store a single value each (depending on their types).
+
+objects in JavaScript may be defined as an unordered collection of related data, of primitive or reference types, in the form of “key: value” pairs. 
+These keys can be variables or functions and are called properties and methods, respectively, in the context of an object.
+
+example
+var myCar = new Object();
+myCar.make = 'dodge';
+myCar.model = 'charger';
+myCar.year = '1969';
+
+object named myCar and it properties named make, model, and year.
+
+Ways to create an object in javascript ;
+
+Object.create()
+
+Object constructor
+
+Object.assign()
+
+Object.fromEntries
+
+Object litera
